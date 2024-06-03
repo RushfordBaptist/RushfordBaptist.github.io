@@ -43,7 +43,7 @@
 			<button
 				class="iconButton"
 				popovertarget="mypopover"
-				on:click={() => {
+				on:click={(e) => {
 					popoverOpen = !popoverOpen;
 					submenuRightOffset = innerWidth - e.target.offsetLeft - e.target.clientWidth - 16;
 				}}
