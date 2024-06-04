@@ -2,9 +2,10 @@
 	export let menuItems;
 	export let id;
 	export let rightOffset = 0;
+	export let topOffset = 100;
 </script>
 
-<div {id} popover class="popoverMenu" style="right: max({rightOffset}px, 5vw);">
+<div {id} popover class="popoverMenu" style="right: max({rightOffset}px, 5vw); top: {topOffset}px;">
 	<nav class="popoverNav">
 		{#each menuItems as { name, url }}
 			<a class="buttonLink" href={url}>{name}</a>
@@ -20,7 +21,6 @@
 	.popoverMenu {
 		position: absolute;
 		inset: unset;
-		top: 100px;
 		margin: 0;
 		background-color: white;
 		border: 0;

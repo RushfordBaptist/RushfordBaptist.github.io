@@ -9,7 +9,8 @@
 	let innerWidth = 0;
 	$: large = innerWidth > 900;
 
-	let submenuRightOffset = 20;
+	let submenuRightOffset = 0;
+	let submenuTopOffset = 100;
 
 	let popoverOpen = false;
 </script>
@@ -17,46 +18,53 @@
 <svelte:window bind:innerWidth />
 
 <div class="navbar">
-	<a href="/">
-		<ChurchLogo />
-	</a>
-	{#if large}
-		<nav class="nav">
-			{#each menuItems as { name, url, submenu }}
-				{#if submenu}
-					<button
-						class="navButton"
-						popovertarget="{name}Submenu"
-						on:click={(e) => {
-							submenuRightOffset = innerWidth - e.target.offsetLeft - e.target.clientWidth - 16;
-							console.log(e);
-						}}>{name}</button
-					>
-					<PopoverMenu menuItems={submenu} id="{name}Submenu" rightOffset={submenuRightOffset} />
-				{:else}
-					<a class="buttonLink" href={url}>{name}</a>
-				{/if}
-			{/each}
-		</nav>
-	{:else}
-		<div class="nav">
-			<button
-				class="iconButton"
-				popovertarget="mypopover"
-				on:click={(e) => {
-					popoverOpen = !popoverOpen;
-					submenuRightOffset = innerWidth - e.target.offsetLeft - e.target.clientWidth - 16;
-				}}
-			>
-				{#if popoverOpen}
-					<CloseIcon />
-				{:else}
-					<MenuIcon />
-				{/if}
-			</button>
-			<PopoverMenu id="mypopover" {menuItems} rightOffset={submenuRightOffset} />
-		</div>
-	{/if}
+	<div class="navbarContentContainer">
+		<a href="/">
+			<ChurchLogo />
+		</a>
+		{#if large}
+			<nav class="nav">
+				{#each menuItems as { name, url, submenu }}
+					{#if submenu}
+						<button
+							class="navButton"
+							popovertarget="{name}Submenu"
+							on:click={(e) => {
+								submenuRightOffset = innerWidth - e.target.offsetLeft - e.target.clientWidth - 16;
+								submenuTopOffset = e.target.offsetTop + e.target.clientHeight + 10;
+							}}>{name}</button
+						>
+						<PopoverMenu
+							menuItems={submenu}
+							id="{name}Submenu"
+							rightOffset={submenuRightOffset}
+							topOffset={submenuTopOffset}
+						/>
+					{:else}
+						<a class="buttonLink" href={url}>{name}</a>
+					{/if}
+				{/each}
+			</nav>
+		{:else}
+			<div class="nav">
+				<button
+					class="iconButton"
+					popovertarget="mypopover"
+					on:click={(e) => {
+						popoverOpen = !popoverOpen;
+						submenuRightOffset = innerWidth - e.target.offsetLeft - e.target.clientWidth - 16;
+					}}
+				>
+					{#if popoverOpen}
+						<CloseIcon />
+					{:else}
+						<MenuIcon />
+					{/if}
+				</button>
+				<PopoverMenu id="mypopover" {menuItems} rightOffset={submenuRightOffset} />
+			</div>
+		{/if}
+	</div>
 </div>
 
 <style>
@@ -97,9 +105,12 @@
 		color: white;
 		height: 150px;
 		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
+		flex-direction: column;
 		padding: 0 5%;
+	}
+	.navbarContentContainer {
+		display: flex;
+		justify-content: space-between;
 	}
 	.nav {
 		align-content: center;
