@@ -7,7 +7,7 @@
 
 <div
 	class="intro"
-	style="background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url({imageUrl}); height: {height}px;"
+	style="background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url({imageUrl}); height: {height}px;"
 >
 	<h4>{pretitle}</h4>
 	<h2>{title}</h2>
