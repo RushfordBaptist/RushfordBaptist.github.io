@@ -2,6 +2,8 @@
 	import PageIntro from '$lib/PageIntro.svelte';
 	import MarkedStory from '../lib/MarkedStory.svelte';
 	import { home } from '$lib/content/home.js';
+	import LocationCard from '../lib/LocationCard.svelte';
+	import TimeCard from '../lib/TimeCard.svelte';
 
 	const {
 		intro: {
@@ -11,6 +13,7 @@
 			height,
 			action: { text, path }
 		},
+		locationsAndTimes: { locations, times },
 		stories
 	} = home;
 </script>
@@ -26,7 +29,19 @@
 	{/each}
 </div>
 
-<div>Test</div>
+<div class="locations-and-times">
+	<h1>Locations & Times</h1>
+	<div class="locations">
+		{#each locations as location}
+			<LocationCard {location} />
+		{/each}
+	</div>
+	<div class="times">
+		{#each times as time}
+			<TimeCard {time} />
+		{/each}
+	</div>
+</div>
 
 <style>
 	.container {
