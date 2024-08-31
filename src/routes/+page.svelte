@@ -1,19 +1,38 @@
 <script>
 	import PageIntro from '$lib/PageIntro.svelte';
+	import MarkedStory from '../lib/MarkedStory.svelte';
+	import { home } from '$lib/content/home.js';
+
+	const {
+		intro: {
+			imageUrl,
+			pretitle,
+			title,
+			height,
+			action: { text, path }
+		},
+		stories
+	} = home;
 </script>
 
-<PageIntro
-	imageUrl="https://i.imgur.com/CBNhtBo.jpg"
-	pretitle="Welcome to"
-	title="Rushford Baptist Church"
-	height="600"
->
-	<a slot="action" href="/about/who-we-are" class="outlineButton" role="button">Who are we?</a>
+<PageIntro {imageUrl} {pretitle} {title} {height}>
+	<a slot="action" href={path} class="outlineButton" role="button">{text}</a>
 </PageIntro>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<div class="container">
+	{#each stories as content}
+		<MarkedStory markdownString={content} />
+		<hr />
+	{/each}
+</div>
+
+<div>Test</div>
 
 <style>
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+	}
 	:global(body) {
 		margin: 0;
 	}
