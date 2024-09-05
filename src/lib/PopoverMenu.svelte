@@ -8,7 +8,7 @@
 <div {id} popover class="popoverMenu" style="right: max({rightOffset}px, 5vw); top: {topOffset}px;">
 	<nav class="popoverNav">
 		{#each menuItems as { name, url }}
-			<a class="buttonLink" href={url}>{name}</a>
+			<a class="menu-button buttonLink" href={url}>{name}</a>
 		{/each}
 	</nav>
 </div>
@@ -25,7 +25,11 @@
 		background-color: white;
 		border: 0;
 	}
-	.popoverMenu .buttonLink {
+	.buttonLink {
+		background-color: transparent;
 		color: black;
+	}
+	.buttonLink:hover {
+		background-color: slategray;
 	}
 </style>

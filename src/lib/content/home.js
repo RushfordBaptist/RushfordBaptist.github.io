@@ -11,7 +11,7 @@ export const home = {
 		}
 	},
 	stories: [
-		`# Worship with us!\nJoin us as we strive to love people, learn God's word, and live by Jesus' example.`
+		`## Worship with us!\nJoin us as we strive to love people, learn God's word, and live by Jesus' example.`
 	],
 	locationsAndTimes: {
 		title: 'Locations & Meeting Times',

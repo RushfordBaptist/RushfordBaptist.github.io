@@ -29,14 +29,14 @@
 	{/each}
 </div>
 
-<div class="locations-and-times">
-	<h1>Locations & Times</h1>
-	<div class="locations">
+<div class="container centered-container">
+	<h2>Locations & Times</h2>
+	<div class="centered-row">
 		{#each locations as location}
 			<LocationCard {location} />
 		{/each}
 	</div>
-	<div class="times">
+	<div class="centered-row">
 		{#each times as time}
 			<TimeCard {time} />
 		{/each}

@@ -41,7 +41,7 @@
 							topOffset={submenuTopOffset}
 						/>
 					{:else}
-						<a class="buttonLink" href={url}>{name}</a>
+						<a class="menu-button" href={url}>{name}</a>
 					{/if}
 				{/each}
 			</nav>
