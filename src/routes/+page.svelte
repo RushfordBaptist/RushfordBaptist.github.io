@@ -4,8 +4,10 @@
 	import { home } from '$lib/content/home.js';
 	import LocationCard from '../lib/LocationCard.svelte';
 	import TimeCard from '../lib/TimeCard.svelte';
+	import GoogleCalendar from '../lib/GoogleCalendar.svelte';
 
 	const {
+		directions,
 		intro: {
 			imageUrl,
 			pretitle,
@@ -37,15 +39,17 @@
 		{/each}
 	</div>
 	<div class="centered-row">
-		{#each times as time}
-			<TimeCard {time} />
+		{#each times as event}
+			<TimeCard {event} />
 		{/each}
 	</div>
+	<p class="margin-bottom-s">{directions}</p>
+	<hr />
 </div>
 
 <style>
 	.container {
-		max-width: 800px;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 	:global(body) {
