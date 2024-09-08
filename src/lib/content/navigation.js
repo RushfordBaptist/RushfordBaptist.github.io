@@ -4,9 +4,7 @@ export const menuItems = [
 		name: 'About',
 		submenu: [
 			{ name: 'Who we are', url: '/about/who-we-are' },
-			{ name: 'What we believe', url: '/about/what-we-believe' },
-			{ name: 'Meeting times', url: '/about/meeting-times' },
-			{ name: 'Contact us', url: '/about/contact' }
+			{ name: 'What we believe', url: '/about/what-we-believe' }
 		]
 	},
 	{ name: 'Giving', url: 'https://tithe.ly/give?c=1324564' },
