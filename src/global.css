@@ -183,6 +183,11 @@ hr {
 	margin: var(--space-s);
 }
 
+.margin-y-s {
+	margin-top: var(--space-s);
+	margin-bottom: var(--space-s);
+}
+
 .margin-0 {
 	margin: 0;
 }

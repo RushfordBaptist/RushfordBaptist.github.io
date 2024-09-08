@@ -4,7 +4,6 @@
 	import { home } from '$lib/content/home.js';
 	import LocationCard from '../lib/LocationCard.svelte';
 	import TimeCard from '../lib/TimeCard.svelte';
-	import GoogleCalendar from '../lib/GoogleCalendar.svelte';
 
 	const {
 		directions,
@@ -44,7 +43,6 @@
 		{/each}
 	</div>
 	<p class="margin-bottom-s">{directions}</p>
-	<hr />
 </div>
 
 <style>
