@@ -27,14 +27,14 @@
 	<a slot="action" href={path} class="outlineButton" role="button">{text}</a>
 </PageIntro>
 
-<div class="container">
+<div class="large-container">
 	{#each stories as story}
 		<MarkedStory {story} />
 		<hr />
 	{/each}
 </div>
 
-<div class="container centered-container">
+<div class="large-container centered-container">
 	<h2>Locations & Times</h2>
 	<div class="centered-row">
 		{#each locations as location}

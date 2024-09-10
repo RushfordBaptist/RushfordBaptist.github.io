@@ -8,7 +8,7 @@
 
 <PageIntro {imageUrl} {title} {height} />
 
-<div class="container">
+<div class="large-container">
 	{#each whoWeAre.stories as story}
 		<MarkedStory {story} />
 		<hr />
