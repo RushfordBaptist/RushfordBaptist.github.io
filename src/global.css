@@ -111,6 +111,11 @@ ol {
 	margin-top: 0;
 }
 
+details .content {
+	margin-left: var(--space-l);
+	margin-bottom: var(--space-s);
+}
+
 .buttonLink {
 	color: white;
 	padding: 8px 11px;
