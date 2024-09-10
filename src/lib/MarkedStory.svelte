@@ -5,7 +5,7 @@
 </script>
 
 <div class="markdown-container">
-	<div>{@html marked(title)}</div>
+	{#if title}<div>{@html marked(title)}</div>{/if}
 	<div class="markdown-content-container {textAlignment ? 'text-' + textAlignment : ''}">
 		{#if imageUrl}
 			<img

@@ -19,6 +19,9 @@ export const whoWeAre = {
 			imageUrl: `https://i.imgur.com/qwsfwvv.jpg`,
 			imageAlignment: 'left',
 			textAlignment: 'left'
+		},
+		{
+			content: '[Click here for the Church Constitution](/about/constitution)'
 		}
 	]
 };
