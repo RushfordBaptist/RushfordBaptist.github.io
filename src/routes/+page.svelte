@@ -1,4 +1,8 @@
 <script>
+	// TODO: Add Footer
+	// TODO: Add content to about pages
+	// TODO: Set up custom domain
+	// TODO: Delete old repo
 	import PageIntro from '$lib/PageIntro.svelte';
 	import MarkedStory from '../lib/MarkedStory.svelte';
 	import { home } from '$lib/content/home.js';
@@ -24,8 +28,8 @@
 </PageIntro>
 
 <div class="container">
-	{#each stories as content}
-		<MarkedStory markdownString={content} />
+	{#each stories as story}
+		<MarkedStory {story} />
 		<hr />
 	{/each}
 </div>
@@ -46,10 +50,6 @@
 </div>
 
 <style>
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-	}
 	:global(body) {
 		margin: 0;
 	}
