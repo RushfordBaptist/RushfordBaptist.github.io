@@ -168,5 +168,5 @@ In all matters not governed by the above regulations, the Church shall be govern
 `
 		}
 	],
-	adoptionDetails: `This version of the Constitution was adopted by the First Baptist Church of Rushford, New York on the 19th day of October, 2023 to be fully in effect as of January 1st, 2025.`
+	adoptionDetails: `This version of the Constitution was adopted by the First Baptist Church of Rushford, New York on the 19th day of October, 2023 to be fully in effect January 1st, 2025.`
 };

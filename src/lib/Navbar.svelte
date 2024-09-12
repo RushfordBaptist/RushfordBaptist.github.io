@@ -61,7 +61,7 @@
 						<MenuIcon />
 					{/if}
 				</button>
-				<PopoverMenu id="mypopover" {menuItems} rightOffset={submenuRightOffset} />
+				<PopoverMenu id="mypopover" {menuItems} rightOffset={submenuRightOffset} bind:popoverOpen/>
 			</div>
 		{/if}
 	</div>

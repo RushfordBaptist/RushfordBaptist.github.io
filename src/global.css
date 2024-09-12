@@ -159,9 +159,9 @@ details .content {
 	text-decoration: none;
 	cursor: pointer;
 	font-size: 0.9375rem;
-}
-.menu-button:hover {
-	background-color: slategray;
+	&:hover {
+		background-color: slategray;
+	}
 }
 
 .large-container {
@@ -239,4 +239,8 @@ details .content {
 
 .margin-bottom-s {
 	margin-bottom: var(--space-s);
+}
+
+.margin-left-s {
+	margin-left: var(--space-s);
 }
