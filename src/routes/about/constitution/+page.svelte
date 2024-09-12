@@ -15,6 +15,7 @@
 			<div class="content">{@html marked(article.content)}</div>
 		</details>
 	{/each}
+	<div class="caption margin-s">{@html marked(constitution.adoptionDetails)}</div>
 </div>
 
 <style>
@@ -45,5 +46,14 @@
 
 	summary::-webkit-details-marker {
 		display: none;
+	}
+
+	.content {
+		margin-left: var(--space-l);
+		margin-right: var(--space-l);
+
+		& > ol {
+			list-style-type: upper-alpha;
+		}
 	}
 </style>

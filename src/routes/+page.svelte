@@ -1,6 +1,6 @@
 <script>
 	// TODO: Add Footer
-	// TODO: Add content to about pages
+	// TODO: Fix ABOUT menu on smaller screens
 	// TODO: Set up custom domain
 	// TODO: Delete old repo
 	import PageIntro from '$lib/PageIntro.svelte';

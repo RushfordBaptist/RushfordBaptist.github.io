@@ -12,6 +12,7 @@
 
 body {
 	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	margin: 0;
 }
 
 h1 {
@@ -87,12 +88,13 @@ li {
 	margin: 0 0 0.35em;
 }
 
-.body2 {
-	font-size: 0.875rem;
+.caption > p {
 	font-weight: 400;
-	line-height: 1.43;
-	letter-spacing: 0.01071em;
-	margin: 0 0 0.35em;
+	font-size: 0.75rem;
+	line-height: 1.66;
+	letter-spacing: 0.03333em;
+	margin-bottom: 0.35em;
+	display: block;
 }
 
 hr {
