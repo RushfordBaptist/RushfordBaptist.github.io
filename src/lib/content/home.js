@@ -1,3 +1,7 @@
+import { footer } from './footer.js';
+
+const { title, address, directionsLink } = footer;
+
 export const home = {
 	intro: {
 		height: 600,
@@ -20,24 +24,18 @@ export const home = {
 		title: 'Locations & Meeting Times',
 		locations: [
 			{
-				coords: {
-					lat: 42.39250960936373,
-					lng: -78.2520222247065
-				},
-				title: 'Rushford Baptist Church',
-				imgUrl: 'https://i.imgur.com/gl8aZ2I.jpg',
-				address1: '9016 Main St',
-				address2: 'Rushford, NY 14777'
+				title,
+				address1: address.line1,
+				address2: address.line2,
+				directionsLink
 			},
 			{
-				coords: {
-					lat: 42.38555958812909,
-					lng: -78.25269138180688
-				},
 				title: 'Bible House',
-				imgUrl: 'https://i.imgur.com/gl8aZ2I.jpg',
 				address1: '9103 Hardys Corners Road',
-				address2: 'Rushford, NY 14777'
+				address2: 'Rushford, NY 14777',
+				get directionsLink() {
+					return `https://www.google.com/maps/dir/?api=1&destination=${this.title.replaceAll(' ', '+')}+Rushford+NY`;
+				}
 			}
 		],
 		times: [

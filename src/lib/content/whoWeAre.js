@@ -15,7 +15,9 @@ export const whoWeAre = {
 		},
 		{
 			title: '## Our Pastor',
-			content: `We are currently between pastors. Enquiries about the position can be directed to [elders@rushfordbaptist.org](mailto:elders@rushfordbaptist.org?subject=Pastoral%20search%20enquiry).`,
+			content: `We are currently between pastors. Enquiries about the position can be directed to [elders@rushfordbaptist.org](mailto:elders@rushfordbaptist.org?subject=Pastoral%20search%20enquiry).
+			
+In the interim, while we seek a new pastor, we have been blessed to have the members of the Elder Board as well as a variety of guest speakers step into the pulpit. God has been faithful and we trust in his continued provision.`,
 			imageUrl: `https://i.imgur.com/qwsfwvv.jpg`,
 			imageAlignment: 'left',
 			textAlignment: 'left'
