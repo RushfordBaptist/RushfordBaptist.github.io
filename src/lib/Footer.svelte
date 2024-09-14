@@ -28,17 +28,34 @@
 			<span class="overline">map</span>
 		</div>
 	</div>
+	<div class="stack centered gap-s">
+		{#each contacts as { title, name, phone, email }}
+			<p>
+				{title}: {name} | <a href={`tel:${phone.replaceAll('-', '')}`}>{phone}</a> |
+				<a href={`mailto:${email}`}>{email}</a>
+			</p>
+		{/each}
+		<div class='address'>
+            <p>{title}</p>
+			{#each Object.values(address) as line}
+				<p>{line}</p>
+			{/each}
+		</div>
+	</div>
 </div>
 
 <style>
 	.footer {
 		background-color: black;
 		color: white;
+		& a {
+			color: white;
+		}
 	}
 
 	.icon-row {
 		width: clamp(0px, 75%, 800px);
-		margin: 0 auto;
+		margin: 0 auto var(--space-m);
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		text-align: center;
@@ -52,4 +69,8 @@
 			fill: white;
 		}
 	}
+
+    .address p {
+        margin: 0;
+    }
 </style>
