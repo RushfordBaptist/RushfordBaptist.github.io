@@ -5,7 +5,7 @@ const { title, address, directionsLink } = footer;
 export const home = {
 	intro: {
 		height: 600,
-		imageUrl: 'https://i.imgur.com/CBNhtBo.jpg',
+		imageUrl: 'https://res.cloudinary.com/dkilh4qil/image/upload/Church_front_mwr9f1.jpg',
 		imgTxt: 'Church Building',
 		pretitle: 'Welcome to',
 		title: 'Rushford Baptist Church',

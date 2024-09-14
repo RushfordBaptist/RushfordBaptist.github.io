@@ -1,7 +1,7 @@
 export const constitution = {
 	intro: {
 		height: 400,
-		imageUrl: 'https://i.imgur.com/d2smKra.jpg',
+		imageUrl: 'https://res.cloudinary.com/dkilh4qil/image/upload/cross_pkposp.jpg',
 		imgTxt: 'The Cross',
 		title: 'Church Constitution'
 	},

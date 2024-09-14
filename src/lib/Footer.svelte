@@ -29,14 +29,16 @@
 		</div>
 	</div>
 	<div class="stack centered gap-s">
-		{#each contacts as { title, name, phone, email }}
-			<p>
-				{title}: {name} | <a href={`tel:${phone.replaceAll('-', '')}`}>{phone}</a> |
-				<a href={`mailto:${email}`}>{email}</a>
-			</p>
-		{/each}
-		<div class='address'>
-            <p>{title}</p>
+		<div class="stack gap-2xs">
+			{#each contacts as { title, name, phone, email }}
+				<p>
+					{title}: {name} | <a href={`tel:${phone.replaceAll('-', '')}`}>{phone}</a> |
+					<a href={`mailto:${email}`}>{email}</a>
+				</p>
+			{/each}
+		</div>
+		<div>
+			<p>{title}</p>
 			{#each Object.values(address) as line}
 				<p>{line}</p>
 			{/each}
@@ -70,7 +72,11 @@
 		}
 	}
 
-    .address p {
-        margin: 0;
-    }
+	.contacts {
+		gap: var(--space-s);
+	}
+
+	p {
+		margin: 0;
+	}
 </style>

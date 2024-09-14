@@ -273,3 +273,7 @@ details .content {
 .gap-s {
 	gap: var(--space-s);
 }
+
+.gap-2xs {
+	gap: var(--space-2xs);
+}

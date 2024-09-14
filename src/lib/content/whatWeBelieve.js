@@ -1,7 +1,7 @@
 export const whatWeBelieve = {
 	intro: {
 		height: 400,
-		imageUrl: 'https://i.imgur.com/ins65DH.jpg',
+		imageUrl: 'https://res.cloudinary.com/dkilh4qil/image/upload/Bible_qpc5ab.jpg',
 		imgTxt: 'The Bible',
 		title: 'What We Believe'
 	},
