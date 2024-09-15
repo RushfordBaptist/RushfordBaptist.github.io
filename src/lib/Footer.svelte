@@ -72,10 +72,6 @@
 		}
 	}
 
-	.contacts {
-		gap: var(--space-s);
-	}
-
 	p {
 		margin: 0;
 	}
