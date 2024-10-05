@@ -9,14 +9,14 @@ export const whatWeBelieve = {
 		{
 			title: '## Statement of Faith',
 			content: `1. We believe the Scripture of both the Old and New Testaments is the Word of God, given by verbal inspiration without error, and that it is the final authority in faith and practice.
-2. We believe in a Triune God, eternally existing as Father, Son, and Holy Spirit.
-3. We believe Jesus Christ, God’s only begotten Son, was begotten of the Holy Spirit, born of the virgin Mary, and is true God and true Man.
-4. We believe man was created in the image of God, that he sinned by disobedience and rebellion against the holy command of God, and thereby incurred physical and spiritual death; and that all are born with a sinful nature, and at age of accountability become sinners in thought, word, and deed, and are thereby in need of salvation.
+2. We believe in the Triune God, eternally existing as Father, Son, and Holy Spirit.
+3. We believe Jesus Christ, God's only begotten Son, was begotten of the Holy Spirit, born of the virgin Mary, and is true God and true Man.
+4. We believe man was created in the image of God, male and female, that he sinned by disobedience and rebellion against the holy command of God, and thereby incurred physical and spiritual death; and that all are born with a sinful nature and are thereby in need of salvation.
 5. We believe that God so loved this world that He gave His only begotten Son, the Lord Jesus Christ, who died for the sins of all; and that all who believe in and receive Him are justified through His shed blood, are born again by the Holy Spirit, and thus become children of God.
 6. We believe that God is just in justifying all who believe in Jesus Christ, and that there is salvation in no other way but by receiving Him as Savior by faith, even such a faith as always works by love, is attended by godly sorrow for sin, and causes a cheerful obedience to God's Word.
 7. We believe that all believers are reproved of sin and are sealed by the Holy Spirit, causing them to rest on Christ for salvation, and are kept by the power of God through faith unto the redemption of the body.
-8. We believe in the bodily resurrection the ascension, and the present High Priesthood of the Lord Jesus Christ.
-9. We believe in the pretribulational, premillennial, personal return of our Lord and Savior Jesus Christ, as the "blessed hope" of all believers.
+8. We believe in the bodily resurrection, the ascension, and the present High Priesthood of the Lord Jesus Christ.	
+9. We believe in the personal return of our Lord and Savior Jesus Christ, as the "blessed hope" of all believers.	
 10. We believe in the bodily resurrection of the just and the unjust, the everlasting blessedness of the saved, and the everlasting conscious punishment of the lost.`,
 			textAlignment: 'left'
 		},
