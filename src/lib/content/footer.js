@@ -17,8 +17,8 @@ export const footer = {
 	contacts: [
 		{
 			title: `Elder Chair`,
-			name: `Scott Elwell`,
-			phone: `585-689-2190`,
+			name: `Patrick Barringer`,
+			phone: `315-834-2580`,
 			email: `elders@rushfordbaptist.org`
 		},
 		{
