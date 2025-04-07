@@ -55,7 +55,7 @@ export const home = {
 				title: 'Bible Study & Prayer',
 				day: 'Wednesday',
 				time: '7:00pm',
-				location: "Tom & Tyeise Green's House"
+				location: "Dave & Amy Brautigam's House"
 			}
 		]
 	},
