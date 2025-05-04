@@ -42,7 +42,7 @@ export const home = {
 			{
 				title: 'Sunday School',
 				day: 'Sunday',
-				time: '9:45am',
+				time: '10:00am',
 				location: 'Church Building'
 			},
 			{
