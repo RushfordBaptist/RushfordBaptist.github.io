@@ -22,7 +22,7 @@
 			<span class="overline">email</span>
 		</div>
 		<div class="stack">
-			<a href={directionsLink}>
+			<a href={directionsLink} target="_blank">
 				<MapIcon />
 			</a>
 			<span class="overline">map</span>
