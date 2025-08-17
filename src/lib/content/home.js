@@ -18,7 +18,13 @@ export const home = {
 		{
 			title: `## Worship with us!`,
 			content: `Join us as we strive to love people, learn God's word, and live by Jesus' example.`
-		}
+		}, 
+		{
+			title: `## Labor Day Sunday`, 
+			content: `Different time. Different location. Same church. Same God.
+
+Join us at __Legion Park__ in Rushford at __10:30am__ as we celebrate Christ with the broader community.`
+		}, 
 	],
 	locationsAndTimes: {
 		title: 'Locations & Meeting Times',
