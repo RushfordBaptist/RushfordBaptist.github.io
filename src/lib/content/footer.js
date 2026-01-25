@@ -23,7 +23,7 @@ export const footer = {
 		},
 		{
 			title: `Church Secretary`,
-			name: `Kaleena Bell`,
+			name: `Catherine Brooks`,
 			phone: `585-981-8107`,
 			email: `secretary@rushfordbaptist.org`
 		}
