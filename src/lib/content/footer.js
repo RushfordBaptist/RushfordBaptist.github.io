@@ -16,10 +16,10 @@ export const footer = {
 	},
 	contacts: [
 		{
-			title: `Elder Chair`,
-			name: `Patrick Barringer`,
-			phone: `315-834-2580`,
-			email: `elders@rushfordbaptist.org`
+			title: `Pastor`,
+			name: `Jacob Snowden`,
+			phone: `386-302-8721`,
+			email: `pastor@rushfordbaptist.org`
 		},
 		{
 			title: `Church Secretary`,

@@ -15,10 +15,12 @@ export const whoWeAre = {
 		},
 		{
 			title: '## Our Pastor',
-			content: `We are currently between pastors. Enquiries about the position can be directed to [elders@rushfordbaptist.org](mailto:elders@rushfordbaptist.org?subject=Pastoral%20search%20enquiry).
-			
-In the interim, while we seek a new pastor, we have been blessed to have the members of the Elder Board as well as a variety of guest speakers step into the pulpit. God has been faithful and we trust in his continued provision.`,
-			imageUrl: `https://res.cloudinary.com/dkilh4qil/image/upload/q_70/question_man_agum7j.webp`,
+			content: `Pastor Jake has the privilege of serving as the Senior Pastor of Rushford Baptist Church. He is passionate about preaching the Bible and equipping the church to reach a lost and dying world. Nothing excites him more than seeing people grow in their faith and live out the gospel in their community.
+
+Jake holds a Bachelor of Science in Apologetics and Biblical Studies from Liberty University and is currently pursuing a Master of Divinity at Duke University. He has served in pastoral ministry for nearly thirty years and believes the local church is one of God's greatest gifts to the world. Jake loves helping people find belonging, purpose, and spiritual growth in Christ.
+
+Jake and his wife, Julie, have three incredible children: Faith, Sam, and Nate. When he's not preparing sermons or meeting with church members, you'll likely find him embracing his adventurous side outdoors. He enjoys hiking, canyoneering, camping, and exploring God's creation.`,
+			imageUrl: `https://res.cloudinary.com/dkilh4qil/image/upload/v1773278535/Pastor_Jake_1_tfj4ua.jpg`,
 			imageAlignment: 'left',
 			textAlignment: 'left'
 		},
