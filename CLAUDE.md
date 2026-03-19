@@ -12,7 +12,18 @@ npm run lint       # Check formatting and lint
 npm run format     # Auto-fix formatting
 ```
 
-There are no tests.
+Tests use Playwright. Run with:
+
+```bash
+npm test               # Run all tests headless
+npm run test:ui        # Interactive UI mode
+npm run test:report    # View HTML report
+```
+
+Tests run against three browser profiles: Desktop Chrome, Mobile Chrome (Pixel 5), and Mobile Safari iOS (iPhone 12). Test files live in `tests/`:
+- `navigation.spec.js` — navbar links, About submenu, hamburger menu, routing
+- `pages.spec.js` — page content, constitution accordion, service times, calendar embed
+- `footer.spec.js` — phone/email/map links verified across all pages
 
 ## Architecture
 
