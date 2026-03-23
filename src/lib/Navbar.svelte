@@ -4,6 +4,8 @@
 	import CloseIcon from './CloseIcon.svelte';
 	import PopoverMenu from './PopoverMenu.svelte';
 
+	import { onMount } from 'svelte';
+	import { beforeNavigate } from '$app/navigation';
 	import { menuItems } from './content/navigation.js';
 
 	let innerWidth = 0;
@@ -11,11 +13,37 @@
 
 	let submenuRightOffset = 0;
 	let submenuTopOffset = 100;
+	let submenuOpen = false;
 
 	let popoverOpen = false;
+	let ready = false;
+	onMount(() => { ready = true; });
+
+	beforeNavigate(() => {
+		popoverOpen = false;
+		submenuOpen = false;
+	});
+
+	let hamburgerButton;
+	let aboutButton;
+
+	function handleWindowClick(e) {
+		if (popoverOpen) {
+			const mobileMenu = document.getElementById('mypopover');
+			if (mobileMenu && !mobileMenu.contains(e.target) && !hamburgerButton.contains(e.target)) {
+				popoverOpen = false;
+			}
+		}
+		if (submenuOpen) {
+			const aboutMenu = document.getElementById('AboutSubmenu');
+			if (aboutMenu && !aboutMenu.contains(e.target) && !aboutButton.contains(e.target)) {
+				submenuOpen = false;
+			}
+		}
+	}
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:window bind:innerWidth on:click={handleWindowClick} />
 
 <div class="navbar">
 	<div class="navbarContentContainer">
@@ -28,10 +56,12 @@
 					{#if submenu}
 						<button
 							class="navButton"
-							popovertarget="{name}Submenu"
-							on:click={(e) => {
+							data-testid="about-button"
+							bind:this={aboutButton}
+							on:click|stopPropagation={(e) => {
 								submenuRightOffset = innerWidth - e.target.offsetLeft - e.target.clientWidth - 16;
 								submenuTopOffset = e.target.offsetTop + e.target.clientHeight + 10;
+								submenuOpen = !submenuOpen;
 							}}>{name}</button
 						>
 						<PopoverMenu
@@ -39,6 +69,7 @@
 							id="{name}Submenu"
 							rightOffset={submenuRightOffset}
 							topOffset={submenuTopOffset}
+							menuOpen={submenuOpen}
 						/>
 					{:else}
 						<a class="menu-button" href={url}>{name}</a>
@@ -49,8 +80,10 @@
 			<div class="nav">
 				<button
 					class="iconButton"
-					popovertarget="mypopover"
-					on:click={(e) => {
+					data-testid="hamburger-button"
+					disabled={!ready}
+					bind:this={hamburgerButton}
+					on:click|stopPropagation={(e) => {
 						popoverOpen = !popoverOpen;
 						submenuRightOffset = innerWidth - e.target.offsetLeft - e.target.clientWidth - 16;
 					}}
@@ -61,7 +94,7 @@
 						<MenuIcon />
 					{/if}
 				</button>
-				<PopoverMenu id="mypopover" {menuItems} rightOffset={submenuRightOffset} bind:popoverOpen/>
+				<PopoverMenu id="mypopover" {menuItems} rightOffset={submenuRightOffset} menuOpen={popoverOpen} />
 			</div>
 		{/if}
 	</div>
@@ -76,6 +109,7 @@
 		width: 40px;
 		cursor: pointer;
 		padding: 0;
+		opacity: 1;
 	}
 	.navButton {
 		background-color: transparent;

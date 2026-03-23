@@ -3,23 +3,18 @@
 	export let id;
 	export let rightOffset = 0;
 	export let topOffset = 100;
-	export let popoverOpen;
-
-	function closePopover() {
-		document.getElementById(id).hidePopover();
-		popoverOpen = false;
-	}
+	export let menuOpen = false;
 </script>
 
-<div {id} popover class="popoverMenu" style="right: max({rightOffset}px, 5vw); top: {topOffset}px;">
+<div {id} class="popoverMenu" style="right: max({rightOffset}px, 5vw); top: {topOffset}px; display: {menuOpen ? 'block' : 'none'};" on:click|stopPropagation={() => {}}>
 	<nav class="popoverNav">
 		{#each menuItems as { name, submenu, url }}
 			{#if !submenu}
-				<a class="menu-button buttonLink" href={url} on:click={closePopover}>{name}</a>
+				<a class="menu-button buttonLink" href={url}>{name}</a>
 			{:else}
 				<div class="menu-button non-link">{name}</div>
 				{#each submenu as { name, url }}
-					<a class="menu-button buttonLink margin-left-s" href={url} on:click={closePopover}>
+					<a class="menu-button buttonLink margin-left-s" href={url}>
 						{name}
 					</a>
 				{/each}
@@ -35,10 +30,10 @@
 	}
 	.popoverMenu {
 		position: absolute;
-		inset: unset;
 		margin: 0;
 		background-color: white;
 		border: 0;
+		z-index: 1000;
 	}
 	.buttonLink {
 		background-color: transparent;

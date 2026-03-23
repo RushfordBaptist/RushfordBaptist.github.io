@@ -13,15 +13,18 @@ export default defineConfig({
 	projects: [
 		{
 			name: 'chrome',
-			use: { ...devices['Desktop Chrome'] }
+			use: { ...devices['Desktop Chrome'] },
+			testIgnore: ['**/navigation.mobile.spec.js']
 		},
 		{
 			name: 'mobile-chrome',
-			use: { ...devices['Pixel 5'] }
+			use: { ...devices['Pixel 5'] },
+			testIgnore: ['**/navigation.desktop.spec.js']
 		},
 		{
 			name: 'mobile-safari',
-			use: { ...devices['iPhone 12'] }
+			use: { ...devices['iPhone 12'] },
+			testIgnore: ['**/navigation.desktop.spec.js']
 		}
 	],
 	webServer: {
