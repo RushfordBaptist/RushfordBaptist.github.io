@@ -18,7 +18,19 @@ export const home = {
 		{
 			title: `## Worship with us!`,
 			content: `Join us as we strive to love people, learn God's word, and live by Jesus' example.`
-		}, 
+		},
+		{
+			title: `## Good Friday Service`,
+			content: `Join us as we reflect on Christ's sacrifice. 
+
+Friday April 3rd at 7:00pm.`
+		},
+		{
+			title: `## Spring Bible Conference`,
+			content: `Our annual Spring Bible Conference will be held from April 12th to 15th this year. It will be kicked off on Sunday morning and continue at 7pm nightly through Wednesday. 
+
+We are excited to welcome Dr. Andy Walton as our guest speaker. Dr. Walton is an Old Testament professor at Houghton University and from our experience is an engaging and interesting speaker. We expect that all who attend will be blessed through the messages he shares.`
+		}
 	],
 	locationsAndTimes: {
 		title: 'Locations & Meeting Times',
