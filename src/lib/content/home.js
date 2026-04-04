@@ -20,12 +20,6 @@ export const home = {
 			content: `Join us as we strive to love people, learn God's word, and live by Jesus' example.`
 		},
 		{
-			title: `## Good Friday Service`,
-			content: `Join us as we reflect on Christ's sacrifice. 
-
-Friday April 3rd at 7:00pm.`
-		},
-		{
 			title: `## Spring Bible Conference`,
 			content: `Our annual Spring Bible Conference will be held from April 12th to 15th this year. It will be kicked off on Sunday morning and continue at 7pm nightly through Wednesday. 
 
