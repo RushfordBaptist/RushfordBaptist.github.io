@@ -21,7 +21,7 @@ export const home = {
 		},
 		{
 			title: `## Who is my Neighbor?`,
-			content: `Join us at Legion Park On Sunday June 14th for Sunday morning worship and a chance to connect with people in the community.
+			content: `Join us at Legion Park for Sunday morning worship and a chance to connect with people in the community.
 				We will be setting up during our normal Sunday School time. Our service will be at 11am like usual. Then the community fun event will run from 12:30-3:30. Hope to see you there!`
 		}
 	],
