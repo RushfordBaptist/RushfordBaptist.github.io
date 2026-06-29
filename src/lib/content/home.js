@@ -18,7 +18,11 @@ export const home = {
 		{
 			title: `## Worship with us!`,
 			content: `Join us as we strive to love people, learn God's word, and live by Jesus' example.`
-		}
+		},
+		{
+			title: `## No Sunday School on July 5th`,
+			content: `We will be transitioning to our summer Sunday School classes starting July 12th.`
+		},
 	],
 	locationsAndTimes: {
 		title: 'Locations & Meeting Times',
@@ -42,7 +46,7 @@ export const home = {
 			{
 				title: 'Sunday School',
 				day: 'Sunday',
-				time: '9:30am',
+				time: '10:00am',
 				location: 'Church Building'
 			},
 			{
