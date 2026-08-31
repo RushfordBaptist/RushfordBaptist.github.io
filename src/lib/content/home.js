@@ -16,9 +16,13 @@ export const home = {
 	},
 	stories: [
 		{
+			title: `## Church at Legion Park!`,
+			content: `This Sunday, September 6th, we will be worshiping at Legion Park in Rushford. Join us for coffee and assorted breakfast goodies at 10:30am, followed by our worship service at 11:00am. We hope to see you there!`
+		},
+		{
 			title: `## Worship with us!`,
 			content: `Join us as we strive to love people, learn God's word, and live by Jesus' example.`
-		},
+		}
 	],
 	locationsAndTimes: {
 		title: 'Locations & Meeting Times',
