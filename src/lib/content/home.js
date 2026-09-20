@@ -60,5 +60,5 @@ export const home = {
 		]
 	},
 	directions:
-		"We're located on the corner of Concrete Street and Main Street in Rushford, across from the Post Office and next to the library."
+		"We're located on the corner of Concrete Street and Main Street in Rushford, across from the Post Office."
 };
